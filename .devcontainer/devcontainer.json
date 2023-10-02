@@ -6,10 +6,11 @@
             "extensions": [
                 "esbenp.prettier-vscode",
                 "vscode-icons-team.vscode-icons",
-                "wayou.vscode-todo-highlight"
+                "miguelsolorio.fluent-icons"
             ],
             "settings": {
                 "workbench.productIconTheme":"fluent-icons",
+                "workbench.iconTheme": "vscode-icons",
                 "editor.wordWrap": "on"    
             }
             
