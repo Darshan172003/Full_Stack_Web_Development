@@ -6,7 +6,9 @@
             "extensions": [
                 "esbenp.prettier-vscode",
                 "vscode-icons-team.vscode-icons",
-                "miguelsolorio.fluent-icons"
+                "miguelsolorio.fluent-icons",
+                "ritwickdey.LiveServer",
+                "GitHub.copilot"
             ],
             "settings": {
                 "workbench.productIconTheme":"fluent-icons",
