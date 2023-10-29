@@ -9,7 +9,8 @@
                 "miguelsolorio.fluent-icons",
                 "ritwickdey.LiveServer",
                 "GitHub.copilot",
-                "GitHub.copilot-chat"
+                "GitHub.copilot-chat",
+                "formulahendry.code-runner"
             ],
             "settings": {
                 "workbench.productIconTheme":"fluent-icons",
