@@ -2,17 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is meata Description useful for SEO ">
-    <title>My Website !!! </title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Information Form</title>
+    <style>
+        /* Add some basic styling to the form */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-<h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam?</h1>
-<h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam?</h2>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, praesentium corporis non obcaecati distinctio autem illo quod explicabo deleniti ullam voluptates temporibus, aliquid minima? Rem eveniet magni omnis incidunt at.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Foogle</a>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason">
+            <option value="question">Question</option>
+            <option value="comment">Comment</option>
+            <option value="complaint">Complaint</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
