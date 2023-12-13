@@ -10,7 +10,8 @@
                 "ritwickdey.LiveServer",
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
-                "formulahendry.code-runner"
+                "formulahendry.code-runner",
+                "dbaeumer.vscode-eslint"
             ],
             "settings": {
                 "workbench.productIconTheme":"fluent-icons",
