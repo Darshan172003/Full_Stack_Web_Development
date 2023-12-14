@@ -5,25 +5,27 @@
 
 // to display an alert box with the message "Hello World". we are using node.js to run javascript code so alert box will not be displayed not browser
 
-let name = "Darshan"; // string datatype
+let f_name = "Darshan"; // string datatype
 let age = 21; // number datatype
 let isApproved = true; // boolean datatype
 let address; // undefined datatype
 let nullValue = null; // null datatype
 
-console.log(name); // prints the value of name
+console.log(f_name); // prints the value of name
 
-// number           => datatype can be of two types: integer and float (decimal number)
-// bigint           => datatype is used to store large numbers
+// 7 primitive datatypes in javascript are:
+
 // string           => datatype is used to store text data
+// symbol           => datatype is used to store unique identifiers 
+// number           => datatype can be of two types: integer and float (decimal number)
+// null             => datatype is used to assign null value to a variable is type value is object 
+// bigint           => datatype is used to store large numbers
 // boolean          => datatype is used to store true or false values
 // undefined        => datatype is used to declare a variable but not assign any value to it so it is undefined
-// null             => datatype is used to assign null value to a variable is type value is object 
-//symbol            => datatype is used to store unique identifiers 
 
 
-console.log(typeof name); // prints the datatype of name   => string
-console.log(typeof null); // prints the datatype of null   => object
+console.log(typeof f_name);     // prints the datatype of name   => string
+console.log(typeof null);       // prints the datatype of null   => object
 
 /* 
 The `null` value being of type `object` in JavaScript is actually a bug that has existed since the very first version of JavaScript. It's recognized as a mistake in the language's design, but it has never been corrected due to the potential for breaking existing code.
@@ -35,3 +37,20 @@ The reason this bug hasn't been fixed is because of the vast amount of JavaScrip
 
 console.log(typeof undefined);  // prints the datatype of undefined   => undefined
 
+// non primitive datatypes in javascript are:
+
+// Objects are used to store collection of data in key-value pairs and are of reference type in javascript
+// Objects are used to store complex data and are of reference type in javascript
+
+let person = {
+    name: "Darshan",
+    age: 21,
+    isApproved: true,
+    address: "Jalgaon",
+    nullValue: null,
+    undefinedValue: undefined,
+    }; // object declaration
+
+console.log(person["name"]); // prints the value of name
+console.log(person.age); // prints the value of age
+console.log(person); // prints the value of all the properties of object
