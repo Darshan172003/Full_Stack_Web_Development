@@ -17,7 +17,11 @@ AC_Email = "xyz.gmail.com"; // allowed to change the value of variable
 AC_password = "password1234"; // allowed to change the value of variable
 account_city = "Mumbai"; // allowed to change the value of variable
 
-
-
-console.table([AC_no, account_city, AC_Email, AC_password, account_balance,accoutn_state]); // prints the values of all the variables in a table format
-
+console.table([
+  AC_no,
+  account_city,
+  AC_Email,
+  AC_password,
+  account_balance,
+  accoutn_state,
+]); // prints the values of all the variables in a table format
