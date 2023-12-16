@@ -113,3 +113,18 @@ console.log("\n" + "--".repeat(30));
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+console.log("\n" + "--".repeat(30));
+
+let x = 3;
+const y = x++; // y = 3 and x = 4 because postfix increment operator is used so first the value of x is assigned to y and then x is incremented
+console.log("x = ",x);
+console.log("y = ",y);
+
+
+let a1 = 3;
+const b1 = ++a1; // b1 = 4 and a1 = 4 because prefix increment operator is used so first the value of a1 is incremented and then assigned to b1
+console.log("a1 = ",a1);
+console.log("b1 = ",b1);
+
+console.log("\n" + "--".repeat(30));
