@@ -43,3 +43,73 @@ console.log(string_number);
 console.log(typeof(string_number)); // string
 
 
+// ********************OPERATIONS***************************
+
+console.log("\n" + "--".repeat(30) + "OPERATIONS" + "--".repeat(30));
+
+
+// 1. Arithmetic Operations
+
+console.log("\nArithmetic Operations\n");
+
+let a = 7;
+let b = 5;
+ 
+console.log("Additon = ",a+b);
+console.log("Subtraction = ",a-b);
+console.log("Multiplication = ",a*b);
+console.log("Division = ",a/b);
+console.log("Power = ", a**b);
+console.log("Remainder = ",a%b);
+
+console.log("\n" + "--".repeat(30));
+
+let str1 = "Hello";
+let str2 = "Darshan";
+
+str3 = str1 + " " + str2;
+console.log("\n",str3);
+
+console.log("\n" + "--".repeat(30));
+
+console.log("1" + 2); // "12" because 1 is a string and 2 is a number so 1 is converted to string and then concatenated
+console.log(1 + "2"); // "12" because 2 is a string and 1 is a number so 2 is converted to string and then concatenated
+console.log(1 + 2 + "3"); // "33" because 1 and 2 are numbers so they are added and then 3 is a string so 3 is converted to string and then concatenated
+console.log("1" + 2 + 3); // "123" because 1 is a string so 1 is converted to string and then concatenated and then 2 and 3 are numbers so they are added
+console.log("1" + (2 + 3)); // "15" because 2 and 3 are numbers so they are added and then 1 is a string so 1 is converted to string and then concatenated
+
+
+console.log( (3 + 4) * 5 / 3);
+
+console.log("\n" + "--".repeat(30));
+
+let num1 , num2 , num3;
+
+num1 = num2 = num3 = 5; 
+
+// prefix and postfix increment and decrement operators in JS
+
+num1++; // postfix increment operator
+
+console.log(num1);
+
+++num1; // prefix increment operator
+
+console.log(num1);
+
+num1--; // postfix decrement operator
+
+console.log(num1);
+
+--num1; // prefix decrement operator
+
+console.log(num1);
+
+
+// Difference between prefix and postfix operators is that prefix operators are evaluated first and then the value is assigned to the variable
+// and postfix operators are evaluated after the value is assigned to the variable
+
+console.log("\n" + "--".repeat(30));
+
+// link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
