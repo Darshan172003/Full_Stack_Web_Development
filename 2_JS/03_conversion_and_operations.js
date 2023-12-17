@@ -50,7 +50,7 @@ console.log("\n" + "--".repeat(30) + "OPERATIONS" + "--".repeat(30));
 
 // 1. Arithmetic Operations
 
-console.log("\nArithmetic Operations\n");
+console.log("\n" + "--".repeat(30) + "Arithmetic Operations" + "--".repeat(30));
 
 let a = 7;
 let b = 5;
@@ -128,3 +128,31 @@ console.log("a1 = ",a1);
 console.log("b1 = ",b1);
 
 console.log("\n" + "--".repeat(30));
+
+
+// 2. Assignment Operations
+
+
+console.log("\n" + "--".repeat(30) + "Assignment Operations" + "--".repeat(30));
+
+let x1 = 5;
+let y1 = 3;
+
+x1 += y1; // x1 = x1 + y1
+console.log("x1 += y1 = ",x1);
+
+x1 -= y1; // x1 = x1 - y1
+console.log("x1 -= y1 = ",x1);
+
+x1 *= y1; // x1 = x1 * y1
+console.log("x1 *= y1 = ",x1);
+
+x1 /= y1; // x1 = x1 / y1
+console.log("x1 /= y1 = ",x1);
+
+x1 %= y1; // x1 = x1 % y1
+console.log("x1 %= y1 = ",x1);
+
+x **= y; // x = x ** y
+console.log("x **= y = ",x);
+
