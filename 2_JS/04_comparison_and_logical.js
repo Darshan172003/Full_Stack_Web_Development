@@ -1,4 +1,4 @@
-// 2. Comparison Operations
+// 3. Comparison Operations
 
 console.log("\nComparison Operations\n");
 
@@ -32,3 +32,53 @@ console.log(undefined <= 0); // false because undefined is converted to NaN
 console.log("\n" + "--".repeat(30));
 
 console.log("2" === 2); // false because it checks the type and the value both
+
+
+// ? : -> Ternary Operator
+// condition ? true : false
+// if condition is true then true will be returned otherwise false will be returned
+
+
+// 4. Logical Operations
+
+console.log("\n" + "--".repeat(30) + "Logical Operations" + "--".repeat(30));
+
+// 1. AND (&&)
+// true && true -> true
+// true && false -> false
+// false && true -> false
+// false && false -> false
+
+let a = 10;
+let b = 20;
+
+console.log(a > b && b > a); // false
+console.log(a > b && b < a); // false
+console.log(a < b && b > a); // true
+console.log(a < b && b < a); // false
+
+console.log("\n" + "--".repeat(30));
+
+// 2. OR (||)
+// true || true -> true
+// true || false -> true
+// false || true -> true
+// false || false -> false
+
+console.log(a > b || b > a); // true
+console.log(a > b || b < a); // true
+console.log(a < b || b > a); // true
+console.log(a < b || b < a); // false
+
+console.log("\n" + "--".repeat(30));
+
+// 3. NOT (!)
+// !true -> false
+// !false -> true
+
+console.log(!true); // false
+console.log(!false); // true
+console.log(!(a > b)); // true
+console.log(!(a < b)); // false
+
+
