@@ -1,0 +1,21 @@
+body {
+    background-color: #313131;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shrink_property{
+    flex-shrink: 0.5;
+}
+
+.layout div {
+    background: #fff;
+    height: 200px;
+    flex-basis: 100px;
+    border: 1px solid black;
+    margin: 1px;
+}
