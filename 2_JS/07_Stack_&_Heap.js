@@ -9,7 +9,7 @@
 
 
 let f_name = "John";
-let anotherName = f_name; // pass by value => primitive data types
+let anotherName = f_name; // pass by value => primitive data types // call by value
 
 console.log(anotherName); 
 console.log(f_name);
@@ -21,7 +21,7 @@ let Employee = {
 }
 
 
-let Employee2 = Employee; // pass by reference => reference data types
+let Employee2 = Employee; // pass by reference => reference data types // call by reference
 
 console.log(Employee2);
 
