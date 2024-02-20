@@ -24,11 +24,11 @@ console.log(`An index of ${newStringOne} at 2 is ${newStringOne.at(2)}`); // cha
 
 console.log(`ASCII code of index 4 is ${newStringOne.codePointAt(4)}`); // returns ASCII code of index 4 
 
-console.log(`${newString.concat(" and ",newStringOne)}`); // concatenates two strings and returns a new string
+console.log(`${newString.concat(" and ",newStringOne).trim()}`); // concatenates two strings and returns a new string
 
 console.log(newString.trim()); // removes the white spaces from the string
 
-console.log(newString.replace("Hello","Namaste")); // replaces the first string with the second string
+console.log(newString.replace("Hello","Namaste").trim()); // replaces the first string with the second string
 
 console.log(newStringOne.slice(3,8)); // returns the substring from index 3 to 8 but not including 8
 
