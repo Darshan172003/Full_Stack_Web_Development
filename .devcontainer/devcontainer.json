@@ -17,7 +17,8 @@
                 "workbench.productIconTheme":"fluent-icons",
                 "workbench.iconTheme": "vscode-icons",
                 "editor.wordWrap": "on",
-                "code-runner.runInTerminal": true   
+                "code-runner.runInTerminal": true,
+                "code-runner.clearPreviousOutput": true
             }
             
         }
