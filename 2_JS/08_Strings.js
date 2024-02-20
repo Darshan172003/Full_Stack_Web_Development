@@ -7,7 +7,7 @@ let Age = 23;
 
 console.log(`${F_name} is ${Age} years old.`); // string interpolation // new way to do it
 
-const newString = "Hello World"; // string literal
+const newString = "    Hello World     "; // string literal
 const newStringOne = new String("Namaste Bharat"); // string object
 
 console.log(newString.length); // length of the string
@@ -25,4 +25,12 @@ console.log(`An index of ${newStringOne} at 2 is ${newStringOne.at(2)}`); // cha
 console.log(`ASCII code of index 4 is ${newStringOne.codePointAt(4)}`); // returns ASCII code of index 4 
 
 console.log(`${newString.concat(" and ",newStringOne)}`); // concatenates two strings and returns a new string
+
+console.log(newString.trim()); // removes the white spaces from the string
+
+console.log(newString.replace("Hello","Namaste")); // replaces the first string with the second string
+
+console.log(newStringOne.slice(3,8)); // returns the substring from index 3 to 8 but not including 8
+
+console.log(newString.__proto__); // prototype of the string literal used to access the methods of the string literal but not recommended to use it because it is not a good practice to use it
 
