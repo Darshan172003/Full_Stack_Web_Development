@@ -20,3 +20,28 @@ console.log(hundreds.toLocaleString('en-IN'));
 
 console.log("\n" + "-".repeat(50) + "  Math  " + "-".repeat(50));
 
+console.log(Math); // returns a math object
+
+console.log(Math.PI); // returns the value of PI
+
+console.log(Math.abs(-124566)); // returns the absolute value of a number 
+
+console.log(Math.ceil(4.2)); // returns the smallest integer greater than or equal to a given number
+
+console.log(Math.floor(4.2)); // returns the largest integer less than or equal to a given number
+
+console.log(Math.round(5.9)); // returns the value of a number rounded to the nearest integer
+
+console.log(Math.max(4, 5, 6, 7, 8, 9)); // returns the largest number from the given numbers
+
+console.log(Math.min(4, 5, 6, 7, 8, 9)); // returns the smallest number from the given numbers
+
+console.log(Math.random()); // returns a random number between 0 and 1
+
+console.log((Math.random()*10) + 1);
+console.log(Math.floor(Math.random()*10) + 1);
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
