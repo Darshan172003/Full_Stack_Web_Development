@@ -4,7 +4,7 @@ Full Stack Web Development Repo
 
 <li>
     <ol>
-        <li>1. HTML & CSS </li>
-        <li>2. Javascript </li>
+        <li>HTML & CSS </li>
+        <li>Javascript </li>
     </ol>
 </li>
