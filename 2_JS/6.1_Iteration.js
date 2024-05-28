@@ -76,8 +76,52 @@ newmap.set('Fr', "France")
 newmap.set('IN', "India")
 
 for (const key in newmap) { 
-    console.log(key); // does not work with Map because Map is not an iterable object
+    // console.log(key); // does not work with Map because Map is not an iterable object
 }
 
 // for each loop 
+
+const coding = ["js", "ruby", "java", "python", "cpp"]
+
+coding.forEach(function (value) {
+    // console.log(value);
+})
+
+coding.forEach( (language, index) => {
+    // console.log(`Language at index ${index} is ${language}`)
+})
+
+function printme(value){
+    // console.log(value);
+}
+
+coding.forEach(printme); // we give reference of function to forEach loop not calling it directly
+
+const myarray_of_Obj = [
+    {
+        languageName: "javascript",
+        filename: "js",
+    },
+    {
+        languageName: "ruby",
+        filename: "rb",
+    },
+    {
+        languageName: "python",
+        filename: "py",
+    },
+    {
+        languageName: "java",
+        filename: "java",
+    },
+    {
+        languageName: "cpp",
+        filename: "cpp",
+    }
+]
+
+myarray_of_Obj.forEach((item) => {
+    console.log(item);
+    console.log(`\n ${item.languageName} \n`);
+})
 
