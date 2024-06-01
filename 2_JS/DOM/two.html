@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Eelement in DOM</title>
+</head>
+<body style="background-color: #000000; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div'); // createElement() method is used to create a new element
+    console.log(div);
+    div.className = 'newDiv'; // className is used to set the class attribute of the specified element
+    div.id = 'divID';   // id is used to set the id attribute of the specified element
+    div.setAttribute('title', 'title of div'); // setAttribute() method is used to set the attribute of the specified element
+    div.style.backgroundColor = 'orange'; 
+    div.style.color = 'black';
+    div.style.fontSize = '24px';
+    div.style.padding = '10px';
+    // div.innerText = 'This is a new div element'; // innerText is used to set the text content of the specified element
+    
+    const addtext = document.createTextNode('\nThis is a text node'); // createTextNode() method is used to create a new text node
+    div.appendChild(addtext); // appendChild() method is used to add the new element to the body of the document
+
+
+    document.body.appendChild(div); // appendChild() method is used to add the new element to the body of the document
+    // difference between innerText and createTextNode is that innerText is used to set the text content of the specified element and createTextNode is used to create a new text node and append it to the specified element as a child node 
+</script>
+</html>
