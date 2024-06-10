@@ -51,24 +51,24 @@
         5.to enable bubbling we have to pass the third argument as true in addEventListener method.
         */
         
-        document.getElementById("images").addEventListener('click', function(e){
-            console.log("Click inside ul");
-        },false) // this is bubbling
+        // document.getElementById("images").addEventListener('click', function(e){
+        //     console.log("Click inside ul");
+        // },false) // this is bubbling
 
-        document.getElementById("mountain").addEventListener('click', function(e) {
-            e.stopPropagation(); // this will stop the bubbling of the event
-            console.log("Click on Mountain Image");
-        },true) // this is capturing
+        // document.getElementById("mountain").addEventListener('click', function(e) {
+        //     e.stopPropagation(); // this will stop the bubbling of the event
+        //     console.log("Click on Mountain Image");
+        // },true) // this is capturing
 
-        document.getElementById("google").addEventListener('click', function(e){
-            e.preventDefault(); // this will stop the default behaviour of the element
-            e.stopPropagation();
-            console.log("Click on Google");
-        },false)
+        // document.getElementById("google").addEventListener('click', function(e){
+        //     e.preventDefault(); // this will stop the default behaviour of the element
+        //     e.stopPropagation();
+        //     console.log("Click on Google");
+        // },false)
 
         document.querySelector('#images').addEventListener('click', function(event){
             console.log(event.target.tagName);
-            console.log(event.target.parentNode.target);
+            // console.log(event.target.parentNode);
             if(event.target.tagName === 'IMG'){
                 console.log(event.target.id);
                 let removeIt = event.target.remove();
