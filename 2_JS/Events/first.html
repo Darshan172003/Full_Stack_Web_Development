@@ -23,7 +23,7 @@
         <li><img src="images/mountain.jpg" alt="mountain" id="mountain"></li>
         <li><img src="images/photography.jpg" alt="photography" id="photography" width="290px" height="250px"></li>
         <li><img src="images/Untitled.jpg" alt="Untitled" id="image2"></li>
-        <li><a href="https://www.google.com" , style="margin: 10px ; font-size: 30px;">google</a></li>
+        <li><a href="https://www.google.com" , style="margin: 10px ; font-size: 30px;" id="google" target="_blank">google</a></li>
     </ul>
     <script>
         // document.getElementById("photography").onclick = function () {
@@ -41,7 +41,7 @@
 
         // document.getElementById("photography").addEventListener('click', function(e){
         //     console.log("Click on Camera Image");
-        // }, false) // this is a best practice to use this method to add event listener to the element 
+        // }, false)   // this is a best practice to use this method to add event listener to the element 
 
         // What is event bubbling and capturing in JavaScript? 
         /* 1.Event bubbling and capturing are two ways of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. The event propagation mode determines in which order the elements receive the event.
@@ -56,8 +56,23 @@
         },false) // this is bubbling
 
         document.getElementById("mountain").addEventListener('click', function(e) {
-            e.stopPropagation();
+            e.stopPropagation(); // this will stop the bubbling of the event
             console.log("Click on Mountain Image");
+        },true) // this is capturing
+
+        document.getElementById("google").addEventListener('click', function(e){
+            e.preventDefault(); // this will stop the default behaviour of the element
+            e.stopPropagation();
+            console.log("Click on Google");
+        },false)
+
+        document.querySelector('#images').addEventListener('click', function(event){
+            console.log(event.target.tagName);
+            if(event.target.tagName === 'IMG'){
+                console.log(event.target.id);
+                let removeIt = event.target.remove();
+                removeIt.remove();
+            }
         })
 
     </script>
