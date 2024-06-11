@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout & setInterval</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 250px;
+            border: 2px solid black;
+            padding: 50px;
+            outline: 5px double red;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+
+    const sayDate = function (str) {
+        console.log(str, Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', function () {
+          StartButton = setInterval(sayDate, 1000, "Hi");
+    });
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(StartButton);
+    });
+</script>
+
+</html>
