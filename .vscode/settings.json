@@ -1,5 +1,6 @@
 {
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
-    "code-runner.saveFileBeforeRun": true
+    "code-runner.saveFileBeforeRun": true,
+    "editor.wordWrap": "on"
 }
